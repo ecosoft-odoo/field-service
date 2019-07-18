@@ -26,6 +26,7 @@ class TestFieldServiceDelivery(TransactionCase):
             'category_id': self.test_category,
             'inventory_location_id': self.test_location.id,
         })
+        # Create Delivery Carrier
         self.test_carrier_id = self.env['delivery.carrier'].create({
             'name': 'TEST Free Delivery ',
             'free_over': True,
